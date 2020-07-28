@@ -1,8 +1,5 @@
 package com.sber.vector3d;
 
-import javafx.geometry.Point3D;
-import sun.security.util.Length;
-
 class Vector3d {
     /*Задача 3 */
     private double x;
