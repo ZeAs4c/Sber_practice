@@ -7,13 +7,13 @@ import java.util.Scanner;
 public class task18 {
     public static void main(String[] args) {
         /*Задача 18 */
-        Scanner scanner = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         System.out.println("Введите значение a: ");
-        double a = scanner.nextDouble();
+        double a = in.nextDouble();
         System.out.println("Введите значение  b: ");
-        double b = scanner.nextDouble();
+        double b = in.nextDouble();
         System.out.println("Введите значение c: ");
-        double c = scanner.nextDouble();
+        double c = in.nextDouble();
         double maxside = 0;
 
         ArrayList list = new ArrayList<>();

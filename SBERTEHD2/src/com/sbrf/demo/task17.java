@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class task17 {
     public static void main(String[] args) {
         /*Задача 17 */
-        Scanner scanner = new Scanner(System.in);
         int[][] arr = new int[6][7];
         for (int i = 0; i < 6; ++i) {
             for (int j = 0; j < 7; ++j) {

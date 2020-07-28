@@ -35,9 +35,9 @@ public class task19 {
         System.out.println(n + " = " + roman(n));
     }
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         System.out.println("Введите арабское число, которое нужно перевести в римское число: ");
-        int a = scanner.nextInt();
+        int a = in.nextInt();
         test(a);
         }
 }
