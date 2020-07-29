@@ -1,5 +1,4 @@
 package com.sberr.LList;
-
 import java.util.Scanner;
 
 public class Llist {
@@ -71,12 +70,37 @@ class Node {
 class test {
     public static void main(String[] args) {
         Llist ll = new Llist();
+        Scanner in = new Scanner(System.in);
         ll.add("Тест1");
         ll.add("Тест2");
         ll.add("Тест3");
+        ll.add("Привет");
+        ll.add("Как дела?");
+        ll.add("Как погода?");
+        ll.add("Азаза");
         int count = ll.size();
         System.out.println(ll.get(1));
+        System.out.println(ll.get(2));
+        System.out.println(ll.get(3));
+        System.out.println(ll.get(4));
+        System.out.println(ll.get(5));
+        System.out.println(ll.get(6));
+        System.out.println("Нулевой элемент"+ll.get(0));
+        System.out.println("Нулевой элемент больше size"+ll.get(7));
+        System.out.println("Элемент меньше нуля"+ll.get(-1));
         System.out.println("List size = " + count);
+
+        System.out.println("Введите какой элемент хотите вывести на экран?");
+        int id = in.nextInt();
+        System.out.println("Получите ваш элемент: "+ll.get(id));
+        System.out.println("Добавте элемент в лист: ");
+        String str = in.next();
+        ll.add(str);
+        System.out.println("Получите ваш элемент: "+ll.get(8));
+
+
+
+
     }
 
 }
