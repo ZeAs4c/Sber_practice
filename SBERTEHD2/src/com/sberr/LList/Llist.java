@@ -85,9 +85,10 @@ class test {
         System.out.println(ll.get(4));
         System.out.println(ll.get(5));
         System.out.println(ll.get(6));
-        System.out.println("Нулевой элемент"+ll.get(0));
-        System.out.println("Нулевой элемент больше size"+ll.get(7));
-        System.out.println("Элемент меньше нуля"+ll.get(-1));
+        System.out.println(ll.get(7));
+        System.out.println("Нулевой элемент "+ll.get(0));
+        System.out.println("Нулевой элемент больше size "+ll.get(8));
+        System.out.println("Элемент меньше нуля "+ll.get(-1));
         System.out.println("List size = " + count);
 
         System.out.println("Введите какой элемент хотите вывести на экран?");
@@ -98,7 +99,22 @@ class test {
         ll.add(str);
         System.out.println("Получите ваш элемент: "+ll.get(8));
 
+        System.out.println("Введите колличество элементов, которое хотите добавить в лист: ");
+        int countt = in.nextInt();
+        for(int i = 0;i<countt;i++)
+        {
+            System.out.println("Добавте элемент в лист: ");
+            String rr = in.next();
+            ll.add(rr);
+        }
+        count = ll.size();
+        System.out.println("List size = " + count);
 
+        System.out.println("Итоговый вид списка после операций: ");
+        for(int i = 1; i<=count;i++)
+        {
+            System.out.println(ll.get(i));
+        }
 
 
     }
