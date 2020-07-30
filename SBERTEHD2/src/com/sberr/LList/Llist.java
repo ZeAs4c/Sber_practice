@@ -1,6 +1,6 @@
 package com.sberr.LList;
 import java.util.Scanner;
-
+import com.sberr.LList.MistEx;
 public class Llist {
     private Node root;
 
@@ -34,19 +34,14 @@ public class Llist {
 
     public Object get(int id){
         try {
-            if (id <= 0 || id > size()) {
-                throw new IndexOutOfBoundsException();
-            }
             Node result = root;
             for (int i = 0; i < id - 1; i++) {
                 result = result.next;
             }
             return result.data;
-        }catch (IndexOutOfBoundsException e)
+        }catch (NullPointerException e)
         {
-            return "Элемента нет, пусто как то, однако, вы вышли за пределы листа";
-        }catch (NullPointerException e) {
-            return "Элемента нет, пусто как то, однако, вы вышли за пределы листа";
+            return "этого элемента не существует";
         }
     }
 
@@ -74,7 +69,7 @@ class Node {
 }
 
 class test {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MistEx {
         Llist ll = new Llist();
         Scanner in = new Scanner(System.in);
         ll.add("Тест1");
@@ -93,14 +88,18 @@ class test {
         System.out.println(ll.get(6));
         System.out.println(ll.get(7));
         System.out.println("Нулевой элемент "+ll.get(0));
-        System.out.println("Нулевой элемент больше size "+ll.get(8));
+       // System.out.println("Нулевой элемент больше size "+ll.get(8));
         System.out.println("Элемент меньше нуля "+ll.get(-1));
         System.out.println("List size = " + count);
 
         System.out.println("Введите какой элемент хотите вывести на экран?");
         int id = in.nextInt();
+        if (id <= 0 || id >ll.size()) {
+            throw new MistEx("Объекта не существует");
+        }
         System.out.println("Получите ваш элемент: "+ll.get(id));
         System.out.println("Добавте элемент в лист: ");
+
         String str = in.next();
         ll.add(str);
         System.out.println("Получите ваш элемент: "+ll.get(8));
