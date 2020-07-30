@@ -34,7 +34,7 @@ public class Llist {
 
     public Object get(int id){
         try {
-            if (id <= 0 || id >= size()) {
+            if (id <= 0 || id > size()) {
                 throw new IndexOutOfBoundsException();
             }
             Node result = root;
