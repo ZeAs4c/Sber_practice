@@ -33,15 +33,21 @@ public class Llist {
     }
 
     public Object get(int id){
-        Node result = root;
-        if (0>=id || id> size()) {
-            return "Пустотааа";
+        try {
+            if (id <= 0 || id >= size()) {
+                throw new IndexOutOfBoundsException();
+            }
+            Node result = root;
+            for (int i = 0; i < id - 1; i++) {
+                result = result.next;
+            }
+            return result.data;
+        }catch (IndexOutOfBoundsException e)
+        {
+            return "Элемента нет, пусто как то, однако, вы вышли за пределы листа";
+        }catch (NullPointerException e) {
+            return "Элемента нет, пусто как то, однако, вы вышли за пределы листа";
         }
-        for (int i = 0; i < id-1; i++) {
-            result = result.next;
-        }
-
-        return result.data;
     }
 
     private Node findLast() {
