@@ -1,11 +1,11 @@
 package com.sberr.LList;
 import java.util.Scanner;
 import com.sberr.LList.MistEx;
-public class Llist {
+public class Llist<T> {
     private Node root;
 
 
-    public void add(Object obj) {
+    public void add(T obj) {
         if(obj == null)
             return;
         Node node = new Node(obj);
@@ -32,16 +32,16 @@ public class Llist {
         return count;
     }
 
-    public Object get(int id){
+    public T get(int id){
         try {
             Node result = root;
             for (int i = 0; i < id - 1; i++) {
                 result = result.next;
             }
-            return result.data;
+            return(T) result.data;
         }catch (NullPointerException e)
         {
-            return "этого элемента не существует";
+            return(T) "этого элемента не существует";
         }
     }
 
@@ -59,11 +59,11 @@ public class Llist {
     }
 }
 
-class Node {
-    Object data;
+class Node<T> {
+    T data;
     Node next;
 
-    public Node(Object item){
+    public Node(T item){
         this.data = item;
     }
 }
