@@ -1,12 +1,10 @@
 package com.MondaysHomework;
-import com.sun.org.apache.xpath.internal.objects.XObject;
 
-import java.lang.reflect.Method;
 import java.lang.reflect.Field;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.*;
+import org.reflections.Reflections;
 class MyMain {
     public static void main(String[] args) throws Exception {
         MyClass1 t = new MyClass1();
@@ -25,14 +23,16 @@ class MyMain {
         System.out.println(t2.getName() + " / " + t.getNum());
 
         int[] array = new int[] {1, 2 ,3 ,4 ,5};
-        MyClass1.setDict("A", "B");
-        MyClass1.setDict("C", "D");
-        MyClass1.setDict("E", "F");
+        MyClass1.setDict("1", "a");
+        MyClass1.setDict("2", "b");
+        MyClass1.setDict("3", "c");
         array = copyForName(t2, "mainArray");
         System.out.println(Arrays.toString(array));
         Map<String,String> dictionary = new HashMap<String,String>();
         dictionary = copyForName(t2, "dict");
         System.out.println(dictionary.toString());
+        callAllRunMe();
+        printAllClass();
     }
 
     public static void getMet(Object a) {
@@ -68,6 +68,36 @@ class MyMain {
         content = (T) field.get(object);
         return content;
     }
+
+    private static void callAllRunMe() {
+
+        List<Object> objs = new ArrayList<>();
+        objs.add(new MyClass1());
+        objs.add(new MyClass2());
+        for (Object obj : objs) {
+            Method[] ms = obj.getClass().getMethods();
+            for (Method m : ms) {
+                RunMe a = m.getAnnotation(RunMe.class);
+                if (a == null)
+                    continue;
+                String arg = a.arg();
+                try {
+                    m.invoke(obj, arg);
+                } catch (IllegalAccessException | InvocationTargetException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    private static void printAllClass() {
+        Reflections reflections = new Reflections( "com.MondaysHomework");
+        Set<Class<?>> classes = reflections.getTypesAnnotatedWith(Plugins.class);
+        for (Class<?> clazz : classes) {
+            System.out.println(clazz.getCanonicalName());
+        }
+    }
+
 }
 
 

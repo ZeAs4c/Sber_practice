@@ -1,6 +1,6 @@
 package com.MondaysHomework;
 
-
+import com.MondaysHomework.Plugins;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,9 +13,16 @@ public class MyClass1 <T>{
     public MyClass1(){
 
     }
+    @RunMe
+    public void Kek(String a)
+    {
+        System.out.println("Функция кек вызвана");
+    }
+
     public void Fly(){
         System.out.println("Работает");
     }
+
     public T getNum(){ return num; }
     public void setNum(T num){ this.num = num; }
     public  T getName(){ return name; }
