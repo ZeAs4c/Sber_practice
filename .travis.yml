@@ -4,7 +4,7 @@
 
 #  We will use Ubuntu 18.04 (bionic beaver). List of options:
 # https://docs.travis-ci.com/user/reference/overview/#linux
-dist: windows
+os: win64
 
 # This enables the 'defaults' to test java applications:
 language: java
