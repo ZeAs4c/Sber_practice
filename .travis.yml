@@ -7,3 +7,9 @@ matrix:
   - JOB="./gradlew build"
 
 script: "$JOB"
+
+deploy:
+  provider: heroku
+  app: "TestD"
+  api_key:
+     secure:ff232e89-f065-4cd6-a864-47eece8b4f00
