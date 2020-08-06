@@ -1,6 +1,6 @@
 package tasks.test.task1;
 
-import com.HomeworkWednesday.Calculator;
+import com.HomeworkWednesday.task1.Calculator;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;

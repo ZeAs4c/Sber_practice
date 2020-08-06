@@ -1,4 +1,4 @@
-package com.HomeworkWednesday;
+package com.HomeworkWednesday.task2;
 
 
 import java.util.ArrayList;
