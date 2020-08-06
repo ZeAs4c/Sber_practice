@@ -3,3 +3,5 @@ jdk:
  - openjdk8
  - openjdk11
  - oraclejdk9
+
+script: ant build
