@@ -1,10 +1,15 @@
 language: java
-install: ant deps
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
 jdk:
  - openjdk8
  - oraclejdk8
  - openjdk11
+ - oraclejdk11
  - oraclejdk9
+install: ant deps
 addons:
   apt:
     packages:
