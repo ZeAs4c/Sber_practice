@@ -1,7 +1,13 @@
 language: java
+install: ant deps
 jdk:
  - openjdk8
+ - oraclejdk8
  - openjdk11
  - oraclejdk9
-
+addons:
+  apt:
+    packages:
+      - ant
+ant test
 script: ant build
