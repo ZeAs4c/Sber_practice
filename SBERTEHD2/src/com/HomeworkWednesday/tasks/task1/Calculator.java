@@ -1,4 +1,4 @@
-package com.HomeworkWednesday.task1;
+package com.HomeworkWednesday.tasks.task1;
 
 public class Calculator {
     public int sum(int a, int b) {

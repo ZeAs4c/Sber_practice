@@ -1,6 +1,6 @@
-package tasks.test.task2;
+package HomeworkWednesday.tasks.test.task2;
 
-import com.HomeworkWednesday.task2.Quadratic_equation;
+import com.HomeworkWednesday.tasks.task2.Quadratic_equation;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
