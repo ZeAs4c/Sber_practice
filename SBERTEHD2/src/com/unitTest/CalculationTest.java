@@ -1,13 +1,14 @@
-package com.HomeworkWednesday.unitTest;
+package com.unitTest;
 
 import com.HomeworkWednesday.Calculator;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class CalculatorTest {
+public class CalculationTest {
     @Test
     public void testSum() {
         // Given
@@ -20,7 +21,7 @@ public class CalculatorTest {
     @Test
     public void testSub() {
         Calculator calculator = new Calculator();
-       assertEquals(0, calculator.sub(2, 2));
+        assertEquals(0, calculator.sub(2, 2));
     }
 
     @Test
@@ -43,5 +44,4 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         assertEquals(18, calculator.mul(6, 3));
     }
-
 }

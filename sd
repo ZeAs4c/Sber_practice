@@ -1,0 +1,288 @@
+[1mdiff --git a/.ignor.swp b/.ignor.swp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..54d08be[m
+Binary files /dev/null and b/.ignor.swp differ
+[1mdiff --git a/.travis.yml b/.travis.yml[m
+[1mindex d7f8043..7f5a28d 100644[m
+[1m--- a/.travis.yml[m
+[1m+++ b/.travis.yml[m
+[36m@@ -7,9 +7,3 @@[m [mmatrix:[m
+   - JOB="./gradlew build"[m
+ [m
+ script: "$JOB"[m
+[31m-[m
+[31m-deploy:[m
+[31m-  provider: heroku[m
+[31m-  app: "Sber_practice"[m
+[31m-  api_key:[m
+[31m-    secure: "ff232e89-f065-4cd6-a864-47eece8b4f00"[m
+\ No newline at end of file[m
+[1mdiff --git a/dfadfadf b/dfadfadf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6802807[m
+[1m--- /dev/null[m
+[1m+++ b/dfadfadf[m
+[36m@@ -0,0 +1,263 @@[m
+[32m+[m[32m[33mcommit d6ba5efd7fe9d0e200113efd3eaed1c185917b8d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 21:29:17 2020 +0300[m
+[32m+[m
+[32m+[m[32m    7Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit 9261fe6735462884b3cca59b8fdc718387de2d17[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 21:24:41 2020 +0300[m
+[32m+[m
+[32m+[m[32m    7Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit eb3f14f0d7586df70fde54e032ce9df9dbcc3807[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 21:20:38 2020 +0300[m
+[32m+[m
+[32m+[m[32m    7Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit fe63bac214ae6e0da2e87fa0a7f49e42fed15147[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 21:18:19 2020 +0300[m
+[32m+[m
+[32m+[m[32m    7Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit 6623d5a47656053accb1ac678c7a5b6d9292e828[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 21:10:11 2020 +0300[m
+[32m+[m
+[32m+[m[32m    7Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit f4d46cb3837a5b06001f20ae9e11c93e40f6b088[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 20:45:36 2020 +0300[m
+[32m+[m
+[32m+[m[32m    6Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit 29dc50746615ae75f3b3967daaeb0f09c494f284[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 20:05:14 2020 +0300[m
+[32m+[m
+[32m+[m[32m    6Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit 7686be606b54a70eb62c6387e722a5f8874b7fdc[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 20:02:55 2020 +0300[m
+[32m+[m
+[32m+[m[32m    6Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit 57e85056bec4b834cb4f2129dcd7c3dbce8c1020[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 19:41:39 2020 +0300[m
+[32m+[m
+[32m+[m[32m    5Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit a8e235ebbb3968913858b304706474a1bb640072[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 19:39:38 2020 +0300[m
+[32m+[m
+[32m+[m[32m    4Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit cf132594ae85db683cfe858a1edc934f47a40b13[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 19:34:32 2020 +0300[m
+[32m+[m
+[32m+[m[32m    3Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit 1ad4228fc644b46e9c9c43b4484e4f5cc2a98f2b[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 19:24:42 2020 +0300[m
+[32m+[m
+[32m+[m[32m    2Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit 80d08b907b2c13a3b7a6f3e241f357e19609d998[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 19:21:43 2020 +0300[m
+[32m+[m
+[32m+[m[32m    1Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit 048252cff3b600c89a057446fd58368965e75556[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 19:16:26 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit f372a9f2bec71cf87a84bb64b62dd39949277d23[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 19:11:41 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit 54f787001097176e68ccedacb171b9e0fd32ca59[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 19:04:05 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit 5948591229be6dcc72a7b1840fa1eb7118fc0e39[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 19:01:42 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit 55422c825e2eeb9e8808e2fd280bcd60daefc68c[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 18:59:45 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit 25b10c9ad8612e23762d91bfcd4e6dfbb553daf6[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 18:55:15 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit b6dfa16f831e74fe0a67ac6bc44c819478df1433[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 18:50:05 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit d36e18f05500eab02594adbf3ff64009e8e79ef1[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 18:43:46 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Exception days 8 task 1-4 6 9[m
+[32m+[m
+[32m+[m[32m[33mcommit fda81a7aac1b2ba0266afb1232108faacb5aa6b0[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Aug 5 13:32:50 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Exception days 8 task 1-4[m
+[32m+[m
+[32m+[m[32m[33mcommit 823e5bf30cc6fde83f68f6948f8978917229eb83[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Tue Aug 4 12:50:38 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Exception days 7 task 2[m
+[32m+[m
+[32m+[m[32m[33mcommit 1b67421039a2fed8b7b055281fdb569f66fd4986[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Tue Aug 4 12:36:09 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Exception days 7 task 2[m
+[32m+[m
+[32m+[m[32m[33mcommit 7b5b1d661d231a4bcf733d5b925b75fefcd476b9[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Mon Aug 3 22:36:56 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Exception Mondays4 HM[m
+[32m+[m
+[32m+[m[32m[33mcommit 1c287e4694d398b3bef3161c42f9e5ae2325b873[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Mon Aug 3 19:42:18 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Exception Friday HM[m
+[32m+[m
+[32m+[m[32m[33mcommit 25163c8ce0bce7b199ca94dcc4b55b0f194f8442[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Mon Aug 3 18:26:22 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Exception Mondays Homework[m
+[32m+[m
+[32m+[m[32m[33mcommit da7ba2548c7f39d868ce9b60bfbf130a28389303[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Thu Jul 30 12:14:17 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Exception compl[m
+[32m+[m
+[32m+[m[32m[33mcommit 8b9822fab245ecc9d66d4e15d152a04473ebf0f6[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Thu Jul 30 10:36:39 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Exception compl[m
+[32m+[m
+[32m+[m[32m[33mcommit ec09b71fa6abf4c3d10f61fd479ad13f7174744c[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Thu Jul 30 10:26:33 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Exception compl[m
+[32m+[m
+[32m+[m[32m[33mcommit 29bf6d676bbf60d55db2764250beca0f9153d518[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Jul 29 14:15:53 2020 +0300[m
+[32m+[m
+[32m+[m[32m    implementation of the FLList class[m
+[32m+[m
+[32m+[m[32m[33mcommit e644c4de176e14403b2889c874b7d55f00dfabe6[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Jul 29 13:39:23 2020 +0300[m
+[32m+[m
+[32m+[m[32m    implementation of the LList class[m
+[32m+[m
+[32m+[m[32m[33mcommit 704c113f0bfe584e8173a8b85fb1e844b9042a46[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Wed Jul 29 13:22:09 2020 +0300[m
+[32m+[m
+[32m+[m[32m    implementation of the LList class[m
+[32m+[m
+[32m+[m[32m[33mcommit 0a797215d2c9e1439ff12485cdac980bf23142b0[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Tue Jul 28 22:53:35 2020 +0300[m
+[32m+[m
+[32m+[m[32m    20 task complete and implementation of the vector class[m
+[32m+[m
+[32m+[m[32m[33mcommit 4bf3e829da5b235985512eeb81366891c93d84f9[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Tue Jul 28 15:25:41 2020 +0300[m
+[32m+[m
+[32m+[m[32m    19 task complete and implementation of the vector class[m
+[32m+[m
+[32m+[m[32m[33mcommit a6b4edb2fe342320b1b46117704832f62640203e[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Tue Jul 28 15:24:22 2020 +0300[m
+[32m+[m
+[32m+[m[32m    19 task complete and implementation of the vector class[m
+[32m+[m
+[32m+[m[32m[33mcommit 33c72f2796c6c575b6ff23a3e02b7ba159026480[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Tue Jul 28 08:29:59 2020 +0300[m
+[32m+[m
+[32m+[m[32m    19 task complete[m
+[32m+[m
+[32m+[m[32m[33mcommit 4fc0350eb78ab969fb163dddcb183b23c411785d[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Tue Jul 28 07:34:42 2020 +0300[m
+[32m+[m
+[32m+[m[32m    19 task complete[m
+[32m+[m
+[32m+[m[32m[33mcommit 8ca3ac0d6f9d022bc2e681de61e7e239cb28f7eb[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Tue Jul 28 00:31:52 2020 +0300[m
+[32m+[m
+[32m+[m[32m    18 task complete[m
+[32m+[m
+[32m+[m[32m[33mcommit f04d1b218cdf3dc80e06768988fc0635587285ee[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Tue Jul 28 00:22:52 2020 +0300[m
+[32m+[m
+[32m+[m[32m    18 task complete[m
+[32m+[m
+[32m+[m[32m[33mcommit f39151899aa0fafc98d7a1dba593968adea42e86[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Mon Jul 27 22:58:26 2020 +0300[m
+[32m+[m
+[32m+[m[32m    13 task complete[m
+[32m+[m
+[32m+[m[32m[33mcommit b0492d43a03ff4cfb7a3f201df4c38dc8c1d4ef7[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Mon Jul 27 20:46:57 2020 +0300[m
+[32m+[m
+[32m+[m[32m    10 task complete[m
+[32m+[m
+[32m+[m[32m[33mcommit 6d2ebea2ccf9edcf1c75c6435c8bb62ddce7a26c[m[m
+[32m+[m[32mAuthor: alexk <alexk@DESKTOP-Q509TJ6>[m
+[32m+[m[32mDate:   Mon Jul 27 13:56:56 2020 +0300[m
+[32m+[m
+[32m+[m[32m    1 task[m
+[32m+[m
+[32m+[m[32m[33mcommit 8bb3eb7d87c571222ffd09813794d29ba4d2ecf5[m[m
+[32m+[m[32mAuthor: Alexey <59208681+ZeAs4c@users.noreply.github.com>[m
+[32m+[m[32mDate:   Mon Jul 27 13:07:10 2020 +0300[m
+[32m+[m
+[32m+[m[32m    Initial commit[m

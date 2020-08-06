@@ -1,4 +1,4 @@
-package com.HomeworkWednesday.unitTest;
+package com.unitTest;
 
 import com.HomeworkWednesday.Quadratic_equation;
 import org.junit.jupiter.api.Test;
@@ -11,14 +11,14 @@ public class QuadraticEquationTest {
         // Given
         Quadratic_equation Quadratic = new Quadratic_equation();
         // When
-        assertEquals("-0.07417596432748041 -53.92582403567252", Quadratic.quadraticEquation(1,54,4));
 
+        assertEquals("-0.07417596432748041 -53.92582403567252",Quadratic.quadraticEquation(1,54,4), "0.0001");
     }
 
     @Test
     public void testOne_root() {
         Quadratic_equation Quadratic = new Quadratic_equation();
-        assertEquals( "-2.0",  Quadratic.quadraticEquation(1, 4, 4));
+        assertEquals("-2.0",Quadratic.quadraticEquation(1, 4, 4), "0.0001");
     }
     @Test
     public void testNaN_root() {
