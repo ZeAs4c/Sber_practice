@@ -14,20 +14,26 @@ public class CalculationTest {
         // Given
         Calculator calculator = new Calculator();
         // When
-        assertEquals(4, calculator.sum(2, 2));
+        int a=0;
+        a=calculator.sum(2, 2);
+        assertEquals(4, a);
 
     }
 
     @Test
     public void testSub() {
         Calculator calculator = new Calculator();
-        assertEquals(0, calculator.sub(2, 2));
+        int a=0;
+        a=calculator.sub(2, 2);
+        assertEquals(0, a);
     }
 
     @Test
     public void testDiv() {
         Calculator calculator = new Calculator();
-        assertEquals(0, calculator.div(6, 3));
+        int a=0;
+        a=calculator.div(6, 3);
+        assertEquals(0, a);
     }
 
 
@@ -42,6 +48,8 @@ public class CalculationTest {
     @Test
     public void testMul() {
         Calculator calculator = new Calculator();
-        assertEquals(18, calculator.mul(6, 3));
+        int a=0;
+        a=calculator.mul(6, 3);
+        assertEquals(18, a);
     }
 }
