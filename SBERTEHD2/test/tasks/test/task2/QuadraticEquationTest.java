@@ -1,7 +1,10 @@
-package com.unitTest;
+package tasks.test.task2;
 
 import com.HomeworkWednesday.Quadratic_equation;
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -11,28 +14,36 @@ public class QuadraticEquationTest {
         // Given
         Quadratic_equation Quadratic = new Quadratic_equation();
         // When
+        List<Double> arr = new ArrayList<>();
+        arr.add(-53.92582403567252);
+        arr.add(-0.07417596432748041);
 
-        assertEquals("-0.07417596432748041 -53.92582403567252",Quadratic.quadraticEquation(1,54,4), "0.0001");
+        assertEquals(arr,Quadratic.quadraticEquation(1,54,4));
     }
 
     @Test
     public void testOne_root() {
         Quadratic_equation Quadratic = new Quadratic_equation();
-        assertEquals("-2.0",Quadratic.quadraticEquation(1, 4, 4), "0.0001");
+        List<Double> arr = new ArrayList<>();
+        arr.add(-2.0);
+        assertEquals(arr,Quadratic.quadraticEquation(1, 4, 4));
     }
     @Test
     public void testNaN_root() {
         Quadratic_equation Quadratic = new Quadratic_equation();
-        assertEquals( "Уравнения не существует",  Quadratic.quadraticEquation(0, 0, 0));
+        List<Double> arr = new ArrayList<>();
+        assertEquals( arr,  Quadratic.quadraticEquation(0, 0, 0));
     }
     @Test
     public void testNaNinf_root() {
         Quadratic_equation Quadratic = new Quadratic_equation();
-        assertEquals( "Уравнения не существует",  Quadratic.quadraticEquation(0, 1, 2));
+        List<Double> arr = new ArrayList<>();
+        assertEquals( arr,  Quadratic.quadraticEquation(0, 1, 2));
     }
     @Test
     public void testNoRoot() {
         Quadratic_equation Quadratic = new Quadratic_equation();
-        assertEquals( "Уравнение не имеет квадратных корней",  Quadratic.quadraticEquation(1, 2, 3));
+        List<Double> arr = new ArrayList<>();
+        assertEquals( arr,  Quadratic.quadraticEquation(1, 2, 3));
     }
 }

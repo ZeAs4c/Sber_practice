@@ -1,4 +1,4 @@
-package com.unitTest;
+package tasks.test.task1;
 
 import com.HomeworkWednesday.Calculator;
 import org.junit.jupiter.api.Test;

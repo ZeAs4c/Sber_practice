@@ -6,7 +6,7 @@ public class Calculator {
     }
 
     public int sub(int a, int b) {
-        return a + b;  // ERROR (специально допущенна ошибка для задание 2 под b)
+        return a - b;  // ERROR (специально допущенна ошибка для задание 2 под b)
     }
     public int div(int a, int b) {
         return a % b;
