@@ -1,4 +1,4 @@
-package HomeworkWednesday.tasks.test.task2;
+package com.HomeworkWednesday.tasks.test.task2;
 
 import com.HomeworkWednesday.tasks.task2.Quadratic_equation;
 import org.junit.jupiter.api.Test;
