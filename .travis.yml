@@ -9,8 +9,9 @@ jdk:
  - openjdk11
  - oraclejdk11
  - oraclejdk9
-install: ant deps
 addons:
   apt:
     packages:
-      - ant
+      - ant ./apache/lib/ant.jar
+before_script:
+   - sudo apt-get install ant-optional
