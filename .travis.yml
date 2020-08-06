@@ -13,5 +13,3 @@ addons:
   apt:
     packages:
       - ant ./apache/lib/ant.jar
-before_script:
-   - sudo apt-get install ant-optional
