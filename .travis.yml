@@ -9,5 +9,3 @@ addons:
   apt:
     packages:
       - ant
-ant test
-script: ant build
